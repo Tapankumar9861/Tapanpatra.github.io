@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <title>Portfolio website complete</title>
+        <style>
+            /* Add styles for the skills section */
+            .skills__container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+        
+            .skills__container div {
+                background-color: #f0f0f0; /* Box background color */
+                padding: 20px;
+                border-radius: 10px;
+                transition: all 0.3s ease; /* Transition effect */
+                width: calc(50% - 15px); /* 50% width with gap between items */
+                max-width: 300px; /* Limit maximum width */
+            }
+        
+            .skills__container div:hover {
+                transform: scale(1.05); /* Scale up on hover */
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+            }
+        
+            /* Media query for responsiveness */
+            @media screen and (max-width: 768px) {
+                .skills__container div {
+                    width: calc(100% - 30px); /* 100% width with gap */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div id="name">
+                    <a href="#" class="nav__logo">Tapan.</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#Project" class="nav__link">Project</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Tapan</span></h1>
+                    <div class="featured-name">
+                        <p><span class="typedText"></span></p>
+                    </div>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+ 
+                <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/tapankumr9861?igsh=MWw3cHJrZ2J5ZmVzcQ==" target="_blank">
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tapan-kumar-patra-609ab9212/" target="_blank">
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                    </a>
+                    
+                    <a href="https://github.com/Tapankumar9861" target="_blank">
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </a>
+                </div>
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="30" href="assets/img/Tapan.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/Tapan_img.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am 👋 Tapan</h2>
+                        <p class="about__text">A Full Stack Web Developer with a passion for developing scalable web applications and working across the full stack. Adaptive to all kinds of people, and but not to surrounding and always appreciate constructive criticism to improve my performance. A person with good communication skills and effective team management skills. A good learner with a problem-solving mindset.Seeking to work in an environment that can encourage me to succeed both personally and professionally and where I can utilize my skills and knowledge not only for my growth but also for the people around me.</p>
+                        <hr>
+                        <p>I'm open to Job opportunities. If you think my skills are relevant to your job requirements then do contact me.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+              
+                <div class="skills__container bd-grid">          
+                  
+                  
+                  <div align="center">
+                    <h3>Frontend</h3>
+                    <div class="two">
+                    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="html5" style="padding-bottom: 5px;">
+                    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="css3" style="padding-bottom: 5px;">
+                    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="javascript" style="padding-bottom: 5px;">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40" style="padding-bottom: 5px;"/>
+                </div>
+                  </div>
+                  
+                  <div align="center">
+                    <h3>Backend</h3>
+                    <div class="three">
+                    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodejs"style="padding-bottom: 5px;">
+                    <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="expressjs" style="padding-bottom: 5px;">
+                    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb" style="padding-bottom: 5px;">
+                    <img src="https://img.shields.io/badge/mongoose-%2300f.svg?style=for-the-badge&logo=fastify&logoColor=white" alt="mongoose" style="padding-bottom: 5px;">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40" style="padding-bottom: 5px;"/>
+                    <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40" style="padding-bottom: 5px;"/>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40" style="padding-bottom: 5px;"/>
+                </div>
+                  </div>
+                  <div align="center">
+                    <h3>Programming Languages</h3>
+                   <div class="one">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
+                </div> 
+                  </div>
+                  <div align="center">
+                    <h3>Tools</h3>
+                    <div class="four">
+                    <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="netlify" style="padding-bottom: 8px;">
+                    <img src="https://img.shields.io/badge/Netbeans-f44d27?style=for-the-badge&logo=git&logoColor=white" alt="Netbeans" style="padding-bottom: 8px;">
+                    <img src="https://img.shields.io/badge/Git-f44d27?style=for-the-badge&logo=git&logoColor=white" alt="git" style="padding-bottom: 8px;">
+                    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github" style="padding-bottom: 8px;">
+                    <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" alt="npm" style="padding-bottom: 8px;">
+                    <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white" alt="vscode" style="padding-bottom: 8px;">
+                </div>
+                  </div>
+                </div>
+              </section>
+
+            <!--===== Project =====-->
+            <section class="work section" id="Project">
+                <h2 class="section-title">Project</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <button class="contact100-form-btn">
+                         <span>
+                            Send
+                            <i class="uil uil-message"></i>
+                         </span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Tapan Kumar Patra .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#Project">Project</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/tapankumr9861?igsh=MWw3cHJrZ2J5ZmVzcQ==" target="_blank">
+                    <div class="icon"><i class="uil uil-instagram"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/tapan-kumar-patra-609ab9212/" target="_blank">
+                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                </a>
+                
+                <a href="https://github.com/Tapankumar9861" target="_blank">
+                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                </a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Tapan Kumar Patra</a> - All rights reserved</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+        <!-- ----- TYPING JS Link ----- -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
