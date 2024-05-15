@@ -40,6 +40,69 @@
                 .skills__container div {
                     width: calc(100% - 30px); /* 100% width with gap */
                 }
+                @media screen and (max-width: 768px) {
+            .nav__menu {
+                display: none;
+            }
+
+            .nav__toggle {
+                display: block;
+            }
+
+            .nav__list {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #333;
+                padding-top: 80px;
+                transition: all 0.5s ease;
+                clip-path: circle(100px at 90% -10%);
+                pointer-events: none;
+                opacity: 0;
+            }
+
+            .nav__list.active {
+                clip-path: circle(1000px at 90% -10%);
+                pointer-events: auto;
+                opacity: 1;
+            }
+
+            .nav__item {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .nav__link {
+                font-size: 24px;
+            }
+
+            .home__data {
+                text-align: center;
+            }
+
+            .home__title {
+                font-size: 36px;
+            }
+
+            .home__blob {
+                display: none;
+            }
+
+            .skills__container div {
+                width: calc(100% - 30px);
+            }
+
+            .about__container,
+            .work__container,
+            .contact__container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
             }
         </style>
     </head>
